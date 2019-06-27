@@ -64,7 +64,7 @@ ExecStart=%s/master_init.sh
 # Other Restart options: or always, on-abort, etc
 
 [Install]
-WantedBy=multi-user.target""" % (curpath, user, user))
+WantedBy=multi-user.target""" % (user, user, curpath))
 
 if os.uname()[4][:3] == "arm":
     os.system(""". '%s/master_venv/bin/activate' && pip install https://github.com/humanfirewall-iot19/dlib-builds/raw/master/dlib-19.17.99-cp35-cp35m-linux_armv7l.whl && \
