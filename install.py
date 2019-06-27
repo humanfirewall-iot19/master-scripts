@@ -5,7 +5,7 @@ import os
 curpath = os.path.dirname(os.path.abspath(__file__))
 
 os.system("sudo apt install git python3 python3-dev python3-pip python3-venv")
-os.system("sudo apt install libzbar-dev")
+os.system("sudo apt install libzbar-dev mosquitto")
 os.system("""sudo apt-get install build-essential \
     cmake \
     gfortran \
