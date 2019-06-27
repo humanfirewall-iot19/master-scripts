@@ -49,7 +49,7 @@ python3 main.py
 
 os.system("chmod +x '%s/master_init.sh'" % curpath)
 
-with open("%s/master_service.service", "w") as f:
+with open("%s/master_service.service" % curpath, "w") as f:
     f.write("""[Unit]
 Description=Human Firewall Master Service
 After=mosquitto.target
